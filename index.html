@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Tea Atelier | Artfully Sourced Loose Leaf Teas & Infusions</title>
+<meta name="description" content="Welcome to The Tea Atelier, a quiet sanctuary in East Austin dedicated to the slow extraction of earth's finest leaves and carefully roasted botanicals.">
+<link rel="canonical" href="https://tea-atelier-cb91.sites.tibly.ai/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tea-atelier-cb91.sites.tibly.ai/">
+<meta property="og:site_name" content="The Tea Atelier">
+<meta property="og:title" content="The Tea Atelier | Artfully Sourced Loose Leaf Teas & Infusions">
+<meta property="og:description" content="Welcome to The Tea Atelier, a quiet sanctuary in East Austin dedicated to the slow extraction of earth's finest leaves and carefully roasted botanicals.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style type="text/tailwindcss">
+@theme static {
+  --color-surface: #F5EFEB;
+  --color-ink: #2C2523;
+
+  --color-brand-50: #FAF6F4;
+  --color-brand-100: #F3EAE6;
+  --color-brand-200: #E6D5CD;
+  --color-brand-300: #D6BCB0;
+  --color-brand-400: #C29D8E;
+  --color-brand-500: #8C6A5C;
+  --color-brand-600: #7A5B4E;
+  --color-brand-700: #664B40;
+  --color-brand-800: #523B33;
+  --color-brand-900: #3F2D27;
+
+  --color-accent-50: #FCF9F3;
+  --color-accent-100: #F7EFE0;
+  --color-accent-200: #EEDEBF;
+  --color-accent-300: #E2C99A;
+  --color-accent-400: #D7B474;
+  --color-accent-500: #C8A261;
+  --color-accent-600: #B8904D;
+  --color-accent-700: #99763B;
+  --color-accent-800: #7A5E2E;
+  --color-accent-900: #5C4621;
+
+  --font-display: "Playfair Display", serif;
+  --font-body: "Source Sans Pro", sans-serif;
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 36px;
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3.5 font-body text-sm font-semibold tracking-wide rounded-lg transition-all duration-300 ease-in-out focus:outline-hidden focus:ring-2 focus:ring-offset-2;
+  }
+  .btn-primary {
+    @apply btn bg-brand-500 text-[#FDFBF7] hover:bg-brand-600 focus:ring-brand-500;
+  }
+  .btn-secondary {
+    @apply btn bg-surface text-ink border border-brand-200 hover:border-brand-300 hover:bg-brand-50 focus:ring-brand-400;
+  }
+  .card {
+    @apply bg-[#FDFBF7] p-8 rounded-lg border border-brand-100/60 shadow-xs transition-shadow duration-300 hover:shadow-md;
+  }
+}
+</style>
+</head>
+<body>
+<!-- block:header -->
+<header class="w-full bg-[#FDFBF7] border-b border-brand-100/60 py-6 px-4 md:px-8 sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+    <a href="/" class="group flex items-center gap-2.5 focus:outline-hidden">
+      <span class="w-8 h-8 rounded-full bg-accent-100 flex items-center justify-center border border-accent-200 text-brand-600 font-display font-semibold text-lg transition-transform duration-300 group-hover:rotate-12">t</span>
+      <span data-tibly-field="business-name" class="font-display text-2xl font-semibold tracking-wide text-ink transition-colors duration-300 group-hover:text-brand-500">The Tea Atelier</span>
+    </a>
+    
+    <nav class="flex items-center gap-1 bg-surface p-1 rounded-full border border-brand-100/40">
+      <a href="/" class="px-5 py-2 rounded-full font-body text-sm font-medium text-ink/80 hover:text-ink hover:bg-[#FDFBF7] transition-all duration-200">Home</a>
+      <a href="/menu" class="px-5 py-2 rounded-full font-body text-sm font-medium text-ink/80 hover:text-ink hover:bg-[#FDFBF7] transition-all duration-200">Our Blends</a>
+      <a href="/about" class="px-5 py-2 rounded-full font-body text-sm font-medium text-ink/80 hover:text-ink hover:bg-[#FDFBF7] transition-all duration-200">Our Story</a>
+      <a href="/visit" class="px-5 py-2 rounded-full font-body text-sm font-medium text-ink/80 hover:text-ink hover:bg-[#FDFBF7] transition-all duration-200">Visit Us</a>
+    </nav>
+
+    <div class="hidden md:block">
+      <a href="/visit" class="btn-primary py-2.5 px-5 text-xs tracking-wider uppercase rounded-md">Reserve a Table</a>
+    </div>
+  </div>
+</header>
+<!-- /block:header -->
+<!-- block:image-hero -->
+<section class="relative w-full bg-[#FDFBF7] py-16 md:py-32 overflow-hidden" data-block="image-hero">
+  <div class="max-w-7xl mx-auto px-4 md:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+    
+    <!-- Hero Left Column: Editorial Typography -->
+    <div class="lg:col-span-7 space-y-8 z-10">
+      <div class="inline-flex items-center gap-2 px-3 py-1 bg-surface border border-brand-200 rounded-full text-brand-700 text-xs font-semibold uppercase tracking-widest">
+        <span>Hand-Sourced &amp; Earth-Baked</span>
+      </div>
+      <h1 class="font-display text-5xl md:text-7xl lg:text-8xl font-medium text-ink leading-none tracking-tight">
+        The quiet beauty of <span class="italic text-brand-500 font-normal">slow-steeped</span> botanical tea.
+      </h1>
+      <p class="font-body text-lg md:text-xl text-ink/80 max-w-xl leading-relaxed">
+        We gather whole, raw leaves and sun-baked botanicals from high-altitude gardens. Step away from the noise and enjoy a single origin harvest, prepared in quiet devotion.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 pt-4">
+        <a href="/menu" class="btn-primary text-center">Explore Our Blends</a>
+        <a href="/visit" class="btn-secondary text-center">Visit the Salon</a>
+      </div>
+    </div>
+
+    <!-- Hero Right Column: Oversized Organic Mask Image -->
+    <div class="lg:col-span-5 relative flex justify-center">
+      <div class="absolute -inset-4 bg-accent-100 rounded-full blur-3xl opacity-40 -z-10"></div>
+      <!-- Memorable Move: Oversized organic-shaped image mask framing close-ups of tea leaves -->
+      <div class="w-full max-w-[400px] lg:max-w-full aspect-[4/5] bg-surface overflow-hidden shadow-xl" style="clip-path: url('#organic-blob-mask');">
+        <img src="https://images.unsplash.com/photo-1597481499750-3e6b22637e12?auto=format&fit=crop&w=800&q=80" alt="Close-up of dried organic oolong tea leaves resting on coarse earthenware" class="w-full h-full object-cover transition-transform duration-1000 hover:scale-105">
+      </div>
+    </div>
+  </div>
+
+  <!-- Hidden SVG for Custom Clip Path Mask -->
+  <svg class="absolute w-0 h-0" width="0" height="0">
+    <defs>
+      <clipPath id="organic-blob-mask" clipPathUnits="objectBoundingBox">
+        <path d="M0.12,0.35 C0.05,0.18,0.22,0.05,0.45,0.02 C0.71,-0.02,0.92,0.11,0.97,0.31 C1.02,0.51,0.89,0.78,0.73,0.91 C0.55,1.05,0.27,0.99,0.14,0.83 C0.01,0.67,0.19,0.52,0.12,0.35 Z" />
+      </clipPath>
+    </defs>
+  </svg>
+</section>
+<!-- /block:image-hero -->
+<!-- block:warm-intro -->
+<section class="w-full bg-surface py-20 md:py-32 border-y border-brand-100/60" data-block="warm-intro">
+  <div class="max-w-5xl mx-auto px-4 md:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+      <!-- Asymmetric Section Title -->
+      <div class="md:col-span-5">
+        <span class="font-body text-xs font-semibold tracking-widest uppercase text-brand-600 block mb-3">Our Core Philosophy</span>
+        <h2 class="font-display text-3xl md:text-4xl text-ink leading-tight font-medium">
+          A return to raw textures, earthy heat, and genuine origin.
+        </h2>
+      </div>
+      <!-- Body Text Columns -->
+      <div class="md:col-span-7 space-y-6 text-ink/85 font-body text-base md:text-lg leading-relaxed">
+        <p>
+          We source only single-origin teas and clean herbal elements from small family farms that emphasize soil health and sustainable harvesting. No synthetic flavorings, industrial processing, or hidden fillers enter our workspace.
+        </p>
+        <p>
+          Each harvest arrives in its raw, unfiltered state. We dry and roast our botanicals inside our clay ovens to capture the pure essence of charcoal heat, mineral soils, and the clean scent of woodsmoke.
+        </p>
+        <div class="pt-4 flex items-center gap-6">
+          <div>
+            <span class="block font-display text-4xl font-semibold text-brand-500">100%</span>
+            <span class="text-xs text-brand-800 tracking-wider uppercase font-medium">Traceable Sourcing</span>
+          </div>
+          <div class="h-8 w-px bg-brand-200"></div>
+          <div>
+            <span class="block font-display text-4xl font-semibold text-brand-500">Zero</span>
+            <span class="text-xs text-brand-800 tracking-wider uppercase font-medium">Artificial Additives</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /block:warm-intro -->
+<!-- block:offering-cards -->
+<section class="w-full bg-[#FDFBF7] py-20 md:py-32" data-block="offering-cards">
+  <div class="max-w-7xl mx-auto px-4 md:px-8">
+    <!-- Header Block -->
+    <div class="text-center max-w-2xl mx-auto mb-16 md:mb-24 space-y-4">
+      <span class="font-body text-xs font-semibold tracking-widest uppercase text-brand-600">The Tea Menu</span>
+      <h2 class="font-display text-4xl md:text-5xl text-ink font-medium leading-tight">Curated Leaf Varieties</h2>
+      <p class="font-body text-base text-ink/75">
+        Each selection has been gathered for its deep connection to the ground and its nuanced flavor profile.
+      </p>
+    </div>
+
+    <!-- 3-Column Editorial Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Card 1 -->
+      <div class="card flex flex-col justify-between group">
+        <div class="space-y-6">
+          <div class="aspect-video w-full rounded-md overflow-hidden bg-surface">
+            <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=600&q=80" alt="Rich loose leaf oolong tea in an earthenware bowl" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+          </div>
+          <div class="space-y-2">
+            <span class="text-xs font-semibold tracking-widest uppercase text-accent-600 block">Single Origin</span>
+            <h3 class="font-display text-2xl text-ink font-medium group-hover:text-brand-500 transition-colors duration-200">Wood-Fired Oolongs</h3>
+            <p class="font-body text-sm text-ink/75 leading-relaxed">
+              Roast profiles built slowly over charcoal fires, bringing forward notes of warm honey, clean damp soil, and gentle stone fruit.
+            </p>
+          </div>
+        </div>
+        <div class="pt-6 border-t border-brand-100/50 mt-6 flex justify-between items-center text-sm font-semibold">
+          <span class="text-brand-700 font-body">From $18</span>
+          <a href="/menu" class="text-ink hover:text-brand-500 font-body inline-flex items-center gap-1">
+            View Blends <span class="transition-transform duration-200 group-hover:translate-x-1">&rarr;</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card flex flex-col justify-between group">
+        <div class="space-y-6">
+          <div class="aspect-video w-full rounded-md overflow-hidden bg-surface">
+            <img src="https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9?auto=format&fit=crop&w=600&q=80" alt="Fresh green tea leaves laid out on bamboo drying trays" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+          </div>
+          <div class="space-y-2">
+            <span class="text-xs font-semibold tracking-widest uppercase text-accent-600">Pure Botanicals</span>
+            <h3 class="font-display text-2xl text-ink font-medium group-hover:text-brand-500 transition-colors duration-200">High-Mountain Greens</h3>
+            <p class="font-body text-sm text-ink/75 leading-relaxed">
+              Shade-grown leaves hand-harvested during early morning mists. Bright, intensely mineral, with a fresh vegetal crispness.
+            </p>
+          </div>
+        </div>
+        <div class="pt-6 border-t border-brand-100/50 mt-6 flex justify-between items-center text-sm font-semibold">
+          <span class="text-brand-700 font-body">From $16</span>
+          <a href="/menu" class="text-ink hover:text-brand-500 font-body inline-flex items-center gap-1">
+            View Blends <span class="transition-transform duration-200 group-hover:translate-x-1">&rarr;</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card flex flex-col justify-between group">
+        <div class="space-y-6">
+          <div class="aspect-video w-full rounded-md overflow-hidden bg-surface">
+            <img src="https://images.unsplash.com/photo-1563822249548-9a72b6353cd1?auto=format&fit=crop&w=600&q=80" alt="Coarse dried herbs, chamomile flowers, and roots" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+          </div>
+          <div class="space-y-2">
+            <span class="text-xs font-semibold tracking-widest uppercase text-accent-600">Herbal Infusions</span>
+            <h3 class="font-display text-2xl text-ink font-medium group-hover:text-brand-500 transition-colors duration-200">Sun-Baked Roots &amp; Herbs</h3>
+            <p class="font-body text-sm text-ink/75 leading-relaxed">
+              Caffeine-free root blends, coarse-cut herbs, and organic flower heads harvested in full bloom and cured in open sunlight.
+            </p>
+          </div>
+        </div>
+        <div class="pt-6 border-t border-brand-100/50 mt-6 flex justify-between items-center text-sm font-semibold">
+          <span class="text-brand-700 font-body">From $14</span>
+          <a href="/menu" class="text-ink hover:text-brand-500 font-body inline-flex items-center gap-1">
+            View Blends <span class="transition-transform duration-200 group-hover:translate-x-1">&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /block:offering-cards -->
+<!-- block:testimonial -->
+<section class="w-full bg-surface py-20 md:py-32" data-block="testimonial">
+  <div class="max-w-4xl mx-auto px-4 md:px-8 text-center space-y-8">
+    <div class="flex justify-center">
+      <span class="w-12 h-12 rounded-full bg-brand-100 flex items-center justify-center text-brand-600 font-display text-2xl font-serif">“</span>
+    </div>
+    <blockquote class="font-display text-2xl md:text-3xl text-ink leading-relaxed">
+      The Tea Atelier is a rare place of honest pause. Sitting with a hot clay kettle of their roasted oolong in the quiet of their stone courtyard feels like an intentional return to the earth.
+    </blockquote>
+    <div class="space-y-1">
+      <p class="font-body text-sm font-semibold text-brand-800 uppercase tracking-wider">Elena Rostova</p>
+      <p class="font-body text-xs text-ink/60">Austin Rituals Collective</p>
+    </div>
+  </div>
+</section>
+<!-- /block:testimonial -->
+<!-- block:visit-cta -->
+<section class="w-full bg-brand-900 py-24 md:py-32 text-brand-50 relative overflow-hidden" data-block="visit-cta">
+  <!-- Subtle textural background element -->
+  <div class="absolute inset-0 bg-[radial-gradient(#3a2721_1px,transparent_1px)] [background-size:16px_16px] opacity-30"></div>
+  
+  <div class="max-w-4xl mx-auto px-4 md:px-8 text-center space-y-10 relative z-10">
+    <span class="font-body text-xs font-semibold tracking-widest uppercase text-accent-300">Come Sit With Us</span>
+    <h2 class="font-display text-4xl md:text-6xl text-[#FDFBF7] font-medium leading-none">
+      Experience the Slow Steep
+    </h2>
+    <p class="font-body text-base md:text-lg text-brand-200 max-w-xl mx-auto leading-relaxed">
+      Our East Austin tasting room is open for quiet exploration, flight tastings, and single kettle reservations. Step in to browse our seasonal loose leaf jars or book a private tea service.
+    </p>
+
+    <!-- Appointment Booking Widget Area -->
+    <div class="max-w-lg mx-auto bg-brand-800/80 p-6 rounded-lg border border-brand-700/60 shadow-lg text-left mt-8">
+      <h3 class="font-display text-lg text-[#FDFBF7] mb-4 text-center">Schedule a Tasting Session</h3>
+      <div data-tibly-booking>
+        <p class="text-xs text-brand-200/80 text-center font-body">
+          Online booking is loading. If it does not appear, please reach out directly at <a href="tel:5125550198" data-tibly-field="phone" class="underline hover:text-accent-300">(512) 555-0198</a>.
+        </p>
+      </div>
+    </div>
+
+    <!-- Secondary Links -->
+    <div class="pt-6 flex flex-col sm:flex-row justify-center items-center gap-6 text-sm font-body text-brand-200">
+      <span>No booking required for leaf purchases.</span>
+      <span class="hidden sm:inline text-brand-600">|</span>
+      <a href="/visit" class="text-accent-300 hover:text-accent-200 transition-colors duration-200 underline">View Hours &amp; Location</a>
+    </div>
+  </div>
+</section>
+<!-- /block:visit-cta -->
+<!-- block:footer -->
+<footer class="w-full bg-surface border-t border-brand-100/80 py-16 px-4 md:px-8">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
+    
+    <!-- Column 1: Brand -->
+    <div class="space-y-4">
+      <div class="flex items-center gap-2.5">
+        <span class="w-7 h-7 rounded-full bg-[#FDFBF7] flex items-center justify-center border border-brand-100 text-brand-600 font-display font-semibold text-sm">t</span>
+        <span data-tibly-field="business-name" class="font-display text-xl font-semibold tracking-wide text-ink">The Tea Atelier</span>
+      </div>
+      <p class="font-body text-ink/70 text-sm max-w-xs leading-relaxed">
+        A quiet sanctuary dedicated to the slow extraction of earth's finest leaves and carefully roasted botanicals.
+      </p>
+    </div>
+
+    <!-- Column 2: Hours & Location -->
+    <div class="space-y-4">
+      <h4 class="font-display text-sm font-semibold tracking-wider uppercase text-brand-800">The Salon</h4>
+      <div class="space-y-2 text-sm font-body text-ink/75 leading-relaxed">
+        <p data-tibly-field="address" class="block">108 Sandstone Path, Suite B, East Austin, Texas</p>
+        <p data-tibly-field="hours" class="block">Wednesday to Sunday: 9:00 AM to 6:00 PM</p>
+      </div>
+    </div>
+
+    <!-- Column 3: Contact & Connections -->
+    <div class="space-y-4">
+      <h4 class="font-display text-sm font-semibold tracking-wider uppercase text-brand-800">Get in Touch</h4>
+      <div class="space-y-2 text-sm font-body text-ink/75 flex flex-col">
+        <a href="tel:5125550198" data-tibly-field="phone" class="hover:text-brand-600 transition-colors duration-200">(512) 555-0198</a>
+        <a href="mailto:hello@theteaatelier.com" data-tibly-field="email" class="hover:text-brand-600 transition-colors duration-200">hello@theteaatelier.com</a>
+      </div>
+      <div data-tibly-field="links" class="flex gap-4 pt-2">
+        <a href="#" class="w-8 h-8 rounded-full bg-[#FDFBF7] flex items-center justify-center text-ink/60 hover:text-brand-600 hover:border-brand-300 border border-brand-100 transition-all duration-200 text-xs">IG</a>
+        <a href="#" class="w-8 h-8 rounded-full bg-[#FDFBF7] flex items-center justify-center text-ink/60 hover:text-brand-600 hover:border-brand-300 border border-brand-100 transition-all duration-200 text-xs">YT</a>
+      </div>
+    </div>
+
+    <!-- Column 4: Navigation -->
+    <div class="space-y-4">
+      <h4 class="font-display text-sm font-semibold tracking-wider uppercase text-brand-800">Explore</h4>
+      <ul class="space-y-2 text-sm font-body text-ink/75">
+        <li><a href="/" class="hover:text-brand-600 transition-colors duration-200">Home</a></li>
+        <li><a href="/menu" class="hover:text-brand-600 transition-colors duration-200">Our Blends</a></li>
+        <li><a href="/about" class="hover:text-brand-600 transition-colors duration-200">Our Story</a></li>
+        <li><a href="/visit" class="hover:text-brand-600 transition-colors duration-200">Visit Us</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-brand-200/50 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <p class="font-body text-xs text-ink/50">
+      &copy; 2025 <span data-tibly-field="business-name">The Tea Atelier</span>. All rights reserved.
+    </p>
+    <p class="font-body text-xs text-ink/40">
+      Hand-sourced botanical infusions.
+    </p>
+  </div>
+</footer>
+<!-- /block:footer -->
+  <script async src="https://api.tibly.ai/widget/v1.js"></script>
+</body>
+</html>
